@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct MsgForEsp {
     /*
     - action
@@ -12,7 +12,7 @@ pub struct MsgForEsp {
     pub back_right: u8,
 }
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct MsgFromEsp {
     /*
     - state or imu readings
