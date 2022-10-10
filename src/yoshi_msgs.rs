@@ -6,10 +6,10 @@ pub struct MsgForEsp {
     - action
         - pwm value for each wing
      */
-    pub front_left: u8,
-    pub front_right: u8,
-    pub back_left: u8,
-    pub back_right: u8,
+    pub front_left: f64,
+    pub front_right: f64,
+    pub back_left: f64,
+    pub back_right: f64,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
